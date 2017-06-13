@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohammedshafiullah.androiddemo.FragmentsActivity">
+
+    <FrameLayout
+        android:id="@+id/container_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragmentsButtonsLayout"
+        >
+    </FrameLayout>
+
+ <LinearLayout
+     android:id="@+id/fragmentsButtonsLayout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     >
+
+     <Button
+         android:id="@+id/aFragment"
+         android:layout_height="wrap_content"
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:text="A"
+         android:onClick="onClick"
+         android:layout_marginLeft="@dimen/textSize"
+         />
+
+     <Button
+         android:id="@+id/bFragment"
+         android:layout_height="wrap_content"
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:text="B"
+         android:layout_alignParentRight="true"
+         android:onClick="onClick"
+         android:layout_marginRight="@dimen/textSize"
+         />
+
+ </LinearLayout>
+
+</RelativeLayout>

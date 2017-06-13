@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/commonMargin"
+    android:background="@android:color/darker_gray"
+    tools:context="com.example.mohammedshafiullah.androiddemo.RegistrationActivity">
+
+    <EditText
+        android:id="@+id/userNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UserName"
+        android:textSize="@dimen/textSize"
+        android:inputType="textPersonName"
+        android:imeOptions="actionNext"
+
+        style="@style/EditTextStyle"
+        android:background="@drawable/textview_selector"
+
+
+    />
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@+id/userNameET"
+        android:layout_marginTop="@dimen/commonMargin"
+        android:imeOptions="actionDone"
+
+        android:inputType="textPassword"
+        android:background="@drawable/textview_selector"
+
+        style="@style/EditTextStyle"
+        />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:layout_below="@+id/passwordET"
+        android:layout_marginTop="@dimen/commonMargin"
+        android:textSize="@dimen/textSize"
+        style="@style/EditTextStyle"
+
+        />
+    <RadioGroup
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordET"
+        android:layout_marginTop="@dimen/commonMargin"
+        android:layout_toRightOf="@+id/gender"
+        android:layout_marginLeft="50dp"
+        >
+       <RadioButton
+           android:id="@+id/maleRadiodBtn"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+           android:onClick="onRadioButtonClicked"
+           />
+        <RadioButton
+            android:id="@+id/femaleRadioBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+
+            />
+    </RadioGroup>
+     <TextView
+         android:id="@+id/maleTV"
+         android:layout_marginTop="@dimen/commonMargin"
+
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/radioButton"
+         android:layout_below="@+id/passwordET"
+         android:text="Male"
+         android:textSize="@dimen/textSize"
+
+
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/radioButton"
+        android:text="Female"
+        android:textSize="@dimen/textSize"
+        android:layout_below="@+id/maleTV"
+        android:layout_marginTop="@dimen/commonMargin"
+        />
+    <LinearLayout
+        android:id="@+id/checkboxLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioButton"
+        android:layout_marginTop="@dimen/commonMargin"
+        >
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept Terms and Condition"
+            android:layout_toRightOf="@+id/checkbox"
+            android:textSize="@dimen/textSize"
+            android:layout_marginTop="2dp"
+            android:textColor="@android:color/holo_red_dark"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkboxLayout"
+        android:layout_marginTop="@dimen/commonMargin"
+        android:padding="@dimen/commonMargin"
+        >
+        <Button
+            android:id="@+id/submitBT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Submit"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/commonMargin"
+            android:background="@drawable/button_selector"
+
+            />
+        <Button
+            android:id="@+id/resetBT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="reset"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/commonMargin"
+            android:background="@drawable/button_selector"
+
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>
