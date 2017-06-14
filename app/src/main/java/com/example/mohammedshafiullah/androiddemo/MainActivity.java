@@ -65,6 +65,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent fragments_screen_intents = new Intent(this , FragmentsActivity.class);
                 startActivity(fragments_screen_intents);
                 break;
+
+            case  R.id.viewPagerButton :
+                Intent viewPager_intents = new Intent(this , ViewPagerActivity.class);
+                startActivity(viewPager_intents);
+                break;
         }
 
     }
