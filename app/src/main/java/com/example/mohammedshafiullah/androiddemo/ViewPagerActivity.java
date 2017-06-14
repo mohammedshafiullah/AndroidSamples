@@ -8,15 +8,9 @@ import android.os.Bundle;
 public class ViewPagerActivity extends AppCompatActivity {
 
 
-    private static final int NUM_PAGES = 5;
-
-    private ViewPager mPager;
-
-    private PagerAdapter mPagerAdapter;
-
-
-//ghjhgfj
-    //gdfjhkdfashjdfhsafdkhjasfdhksafdhkgasfDJHKasFjdhfaskJD
+    ViewPager viewPager;
+    int images[] = {R.mipmap.image1,R.mipmap.image2, R.mipmap.image3, R.mipmap.image4};
+    ViewPagerAdaptor myCustomPagerAdapter;
 
 
 
@@ -26,26 +20,14 @@ public class ViewPagerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_pager);
 
-        // Instantiate a ViewPager and a PagerAdapter.
-        mPager = (ViewPager) findViewById(R.id.viewPager);
+        viewPager = (ViewPager)findViewById(R.id.viewPager);
 
-        mPagerAdapter = new ViewPagerAdaptor();
-
-        mPager.setAdapter(mPagerAdapter);
-
+        myCustomPagerAdapter = new ViewPagerAdaptor(this, images);
+        viewPager.setAdapter(myCustomPagerAdapter);
 
     }
 
 
-    @Override
-    public void onBackPressed() {
-        if (mPager.getCurrentItem() == 0) {
-            // If the user is currently looking at the first step, allow the system to handle the
-            // Back button. This calls finish() on this activity and pops the back stack.
-            super.onBackPressed();
-        } else {
-            // Otherwise, select the previous step.
-            mPager.setCurrentItem(mPager.getCurrentItem() - 1);
-        }
+
     }
-}
+
