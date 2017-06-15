@@ -25,7 +25,8 @@
         <activity android:name=".Dialogs_Activity" />
         <activity android:name=".MultipleListViews" />
         <activity android:name=".FragmentsActivity" />
-        <activity android:name=".ViewPagerActivity"></activity>
+        <activity android:name=".ViewPagerActivity" />
+        <activity android:name=".Toolbar_viewpager"></activity>
     </application>
 
 </manifest>

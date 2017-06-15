@@ -10,7 +10,7 @@ public class ViewPagerActivity extends AppCompatActivity {
 
     ViewPager viewPager;
     int images[] = {R.mipmap.image1,R.mipmap.image2, R.mipmap.image3, R.mipmap.image4};
-    ViewPagerAdaptor myCustomPagerAdapter;
+    ViewPagerAdaptor viewPagerAdaptor;
 
 
 
@@ -22,8 +22,8 @@ public class ViewPagerActivity extends AppCompatActivity {
 
         viewPager = (ViewPager)findViewById(R.id.viewPager);
 
-        myCustomPagerAdapter = new ViewPagerAdaptor(this, images);
-        viewPager.setAdapter(myCustomPagerAdapter);
+        viewPagerAdaptor = new ViewPagerAdaptor(this, images);
+        viewPager.setAdapter(viewPagerAdaptor);
 
     }
 
