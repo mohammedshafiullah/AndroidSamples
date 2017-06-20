@@ -71,6 +71,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent viewPager_intents = new Intent(this , ViewPagerActivity.class);
                 startActivity(viewPager_intents);
                 break;
+
+            case  R.id.ImageFromURL :
+                Intent ImageFromURL_intents = new Intent(this , ImageFromURL.class);
+                startActivity(ImageFromURL_intents);
+                break;
+
+
         }
 
     }
