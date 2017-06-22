@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mohammedshafiullah.androiddemo.ViewPagerActivity">
+    tools:context="com.example.mohammedshafiullah.androiddemo.ImageFromURL">
+
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager"
+        android:id="@+id/viewPagerImageURL"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorAccent"
         >
-</android.support.v4.view.ViewPager>
+    </android.support.v4.view.ViewPager>
+
 </RelativeLayout>

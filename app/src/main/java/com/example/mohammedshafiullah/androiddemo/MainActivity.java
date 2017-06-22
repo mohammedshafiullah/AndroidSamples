@@ -77,6 +77,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(ImageFromURL_intents);
                 break;
 
+            case  R.id.navigationDrawer :
+                Intent navigationDrawer_intents = new Intent(this , Navigation_Drawer_fragmet_Activity.class);
+                startActivity(navigationDrawer_intents);
+                break;
+
 
         }
 

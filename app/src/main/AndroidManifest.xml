@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mohammedshafiullah.androiddemo">
 
+    <!-- Allows applications to open network sockets. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,7 +29,11 @@
         <activity android:name=".MultipleListViews" />
         <activity android:name=".FragmentsActivity" />
         <activity android:name=".ViewPagerActivity" />
-        <activity android:name=".Toolbar_viewpager"></activity>
+        <activity android:name=".ImageFromURL" />
+        <activity
+            android:name=".Navigation_Drawer_fragmet_Activity"
+            android:label="@string/title_activity_navigation__drawer_fragmet_"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
