@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="false"
     android:orientation="vertical"
     android:padding="10dp"
-    android:fillViewport="false"
     android:scrollIndicators="none"
     tools:context="com.example.mohammedshafiullah.androiddemo.MainActivity">
 
@@ -28,8 +27,8 @@
         android:id="@+id/delete_listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dlete listview"
         android:onClick="onClick"
+        android:text="Dlete listview"
 
         />
 
@@ -37,56 +36,56 @@
         android:id="@+id/shared_Preference"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Shared prefence"
         android:onClick="onClick"
+        android:text="Shared prefence"
         />
 
     <Button
         android:id="@+id/Launch_screen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Launch screen"
         android:onClick="onClick"
+        android:text="Launch screen"
         />
 
     <Button
        android:id="@+id/dialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dialogs"
         android:onClick="onClick"
+        android:text="Dialogs"
         />
 
     <Button
         android:id="@+id/multipleListViews"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="multipleListViews"
         android:onClick="onClick"
+        android:text="multipleListViews"
         />
 
     <Button
         android:id="@+id/fragmentsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fragments"
         android:onClick="onClick"
+        android:text="Fragments"
         />
 
     <Button
         android:id="@+id/viewPagerButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="View Pager with images"
         android:onClick="onClick"
+        android:text="View Pager with images"
         />
 
     <Button
         android:id="@+id/ImageFromURL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Image From URL"
         android:onClick="onClick"
+        android:text="Image From URL"
         />
 
       <Button
@@ -96,6 +95,12 @@
       android:onClick="onClick"
       android:text="Navigation Drawer" />
 
+      <Button
+          android:id="@+id/Phone_Contacts"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:onClick="onClick"
+          android:text=" Phone Contacts" />
 
 
   </LinearLayout>

@@ -89,6 +89,7 @@ public class ContactsToListView extends AppCompatActivity {
                 int hasPhoneNumber = Integer.parseInt(cursor.getString(cursor.getColumnIndex(HAS_PHONE_NUMBER)));
                 if (hasPhoneNumber > 0) {
                     output.append("\n First Name:" + name);
+                    
                     //This is to read multiple phone numbers associated with the same contact
                     Cursor phoneCursor = contentResolver.query(PhoneCONTENT_URI, null, Phone_CONTACT_ID + " = ?", new String[]{contact_id}, null);
                     while (phoneCursor.moveToNext()) {
