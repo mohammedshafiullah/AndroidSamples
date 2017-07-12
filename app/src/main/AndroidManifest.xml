@@ -33,7 +33,10 @@
         <activity
             android:name=".Navigation_Drawer_fragmet_Activity"
             android:label="@string/title_activity_navigation__drawer_fragmet_"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PhoneContacts" />
+        <activity android:name=".AndroidGridLayoutActivity" />
+        <activity android:name=".AndriodGridLayoutActivity2"></activity>
     </application>
 
 </manifest>

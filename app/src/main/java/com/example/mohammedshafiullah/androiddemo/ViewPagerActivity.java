@@ -35,8 +35,8 @@ public class ViewPagerActivity extends AppCompatActivity {
        // for loading hard coded images//
 
         viewPager = (ViewPager)findViewById(R.id.viewPager);
-        viewPagerAdaptor = new ViewPagerAdaptor(this, images);
-        viewPager.setAdapter(viewPagerAdaptor);
+     //   viewPagerAdaptor = new ViewPagerAdaptor(this, images);
+        viewPager.setAdapter(new ViewPagerAdaptor(this, images));
 
     }
 }

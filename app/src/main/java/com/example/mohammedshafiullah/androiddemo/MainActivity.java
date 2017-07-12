@@ -82,6 +82,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(navigationDrawer_intents);
                 break;
 
+            case  R.id.PhoneContacts :
+                Intent PhoneContacts_intents = new Intent(this , PhoneContacts.class);
+                startActivity(PhoneContacts_intents);
+                break;
+
+
+            case  R.id.GRID_IMAGES :
+                Intent GRID_IMAGES_intents = new Intent(this , AndroidGridLayoutActivity.class);
+                startActivity(GRID_IMAGES_intents);
+                break;
+
 
         }
 

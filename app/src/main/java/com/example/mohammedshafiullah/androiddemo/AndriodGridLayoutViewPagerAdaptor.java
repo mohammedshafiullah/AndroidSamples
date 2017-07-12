@@ -1,10 +1,9 @@
 package com.example.mohammedshafiullah.androiddemo;
 
-import android.app.Fragment;
 import android.content.Context;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import android.provider.Settings;
 import android.support.v4.view.PagerAdapter;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,39 +11,47 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.squareup.picasso.Picasso;
-
 /**
- * Created by mohammedshafiullah on 13/06/17.
+ * Created by developer on 12/07/17.
  */
 
-public class ViewPagerAdaptor extends PagerAdapter
+public class AndriodGridLayoutViewPagerAdaptor extends PagerAdapter
 {
     Context context;
-    int images[];
     LayoutInflater layoutInflater;
+    Integer imageArray [];
+    int pos;
 
 
-    public ViewPagerAdaptor (Context context, int images[])
+    public AndriodGridLayoutViewPagerAdaptor (Context context ,  Integer imageArray[], int pos)
     {
         this.context = context;
-        this.images = images;
+        this.imageArray = imageArray;
+       this.pos = pos;
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-    }
 
+    }
 
     @Override
     public int getCount()
     {
-        return images.length;
 
+        System.out.println ( "sgafhgafsdghafsghdfas========"+String.valueOf(imageArray.length));
+
+        return imageArray.length;
     }
 
     @Override
-    public boolean isViewFromObject(View view, Object object)
-    {
-
+    public boolean isViewFromObject(View view, Object object) {
         return view == ((LinearLayout) object);
+    }
+
+
+    @Override
+    public void startUpdate(ViewGroup container)
+    {
+        super.startUpdate(container);
+
 
     }
 
@@ -53,23 +60,16 @@ public class ViewPagerAdaptor extends PagerAdapter
     {
         View itemView = layoutInflater.inflate(R.layout.view_pager_adaptor_item, container, false);
 
+
         ImageView imageView = (ImageView) itemView.findViewById(R.id.viewPagerImageView);
-        imageView.setImageResource(images[position]);
-        System.out.println ( "Position========"+String.valueOf(images[position]));
 
-        container.addView(itemView);
-        //listening to image click
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, "you clicked image " + (position + 1), Toast.LENGTH_LONG).show();
-            }
-        });
+        imageView.setImageResource(imageArray[position]);
+        System.out.println ( "Position========"+String.valueOf(imageArray[position]));
 
+
+       container.addView(itemView);
         return itemView;
-
-}
-
+    }
 
 
 
