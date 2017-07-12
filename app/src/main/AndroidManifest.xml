@@ -4,6 +4,8 @@
 
     <!-- Allows applications to open network sockets. -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
 
     <application
         android:allowBackup="true"
@@ -37,6 +39,8 @@
         <activity android:name=".PhoneContacts" />
         <activity android:name=".AndroidGridLayoutActivity" />
         <activity android:name=".AndriodGridLayoutActivity2"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ContactsToListView"></activity>
     </application>
 
 </manifest>
