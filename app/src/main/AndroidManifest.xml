@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -38,9 +37,11 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".PhoneContacts" />
         <activity android:name=".AndroidGridLayoutActivity" />
-        <activity android:name=".AndriodGridLayoutActivity2"></activity>
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ContactsToListView"></activity>
+        <activity android:name=".AndriodGridLayoutActivity2" />
+        android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ContactsToListView" />
+        <activity android:name=".RatingBar" />
+        <activity android:name=".Andriod_RatingBar"></activity>
     </application>
 
 </manifest>

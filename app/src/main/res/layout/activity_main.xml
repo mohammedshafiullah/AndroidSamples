@@ -81,6 +81,14 @@
         />
 
     <Button
+        android:id="@+id/andriodRatingBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="onClick"
+        android:text="andriod_Rating_Bar"
+        />
+
+    <Button
         android:id="@+id/ImageFromURL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -95,12 +103,7 @@
       android:onClick="onClick"
       android:text="Navigation Drawer" />
 
-      <Button
-          android:id="@+id/Phone_Contacts"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:onClick="onClick"
-          android:text=" Phone Contacts" />
+
 
     <Button
         android:id="@+id/PhoneContacts"
@@ -116,6 +119,15 @@
         android:layout_height="wrap_content"
         android:onClick="onClick"
         android:text="GRID + IMAGES" />
+
+
+    <Button
+        android:id="@+id/ratingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Rating Bar" />
+
 
   </LinearLayout>
 </ScrollView>

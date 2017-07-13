@@ -90,9 +90,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(GRID_IMAGES_intents);
                 break;
 
-            case R.id.Phone_Contacts:
-                Intent Phone_Contacts_intents = new Intent(this, ContactsToListView.class);
-                startActivity(Phone_Contacts_intents);
+
+            case R.id.ratingBar:
+                Intent ratingBar_intents = new Intent(this, Andriod_RatingBar.class);
+                startActivity(ratingBar_intents);
                 break;
 
         }
