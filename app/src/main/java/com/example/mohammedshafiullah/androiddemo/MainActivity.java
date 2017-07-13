@@ -96,6 +96,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(ratingBar_intents);
                 break;
 
+            case R.id.datePicker:
+                Intent datePicker_intents = new Intent(this, DatePickerActivity.class);
+                startActivity(datePicker_intents);
+                break;
+
         }
 
     }
