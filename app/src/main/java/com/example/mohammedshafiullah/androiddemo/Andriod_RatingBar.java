@@ -6,10 +6,14 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RatingBar;
+import android.widget.SeekBar;
+import android.widget.Toast;
+import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.Toast;
 
-public class Andriod_RatingBar extends AppCompatActivity {
-
+public class Andriod_RatingBar extends AppCompatActivity   implements OnSeekBarChangeListener {
+    SeekBar seekBar1;
 
     RatingBar ratingbar1;
     Button button;
@@ -31,7 +35,31 @@ public class Andriod_RatingBar extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), totalStars + "\n" + rating, Toast.LENGTH_LONG).show();
             }
         });
-    }}
+
+ ///////////////////////SEEK BAR //////////////////////////////
+        seekBar1=(SeekBar)findViewById(R.id.seekBar);
+        seekBar1.setOnSeekBarChangeListener(this);
+
+
+    }
+    ///////////////////////SEEK BAR //////////////////////////////
+    @Override
+    public void onProgressChanged(SeekBar seekBar, int progress,
+                                  boolean fromUser) {
+        Toast.makeText(getApplicationContext(),"seekbar progress: "+progress, Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    public void onStartTrackingTouch(SeekBar seekBar) {
+        Toast.makeText(getApplicationContext(),"seekbar touch started!", Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    public void onStopTrackingTouch(SeekBar seekBar) {
+        Toast.makeText(getApplicationContext(),"seekbar touch stopped!", Toast.LENGTH_SHORT).show();
+    }
+
+
+
+}
 
 
 
