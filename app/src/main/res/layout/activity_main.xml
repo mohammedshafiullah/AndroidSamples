@@ -135,6 +135,19 @@
         android:onClick="onClick"
         android:text="Date Picker" />
 
+    <Button
+        android:id="@+id/JSONparsing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="JSON parsing" />
 
+
+      <Button
+          android:id="@+id/SqliteDatabase"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:onClick="onClick"
+          android:text="Sqlite Database" />
   </LinearLayout>
 </ScrollView>

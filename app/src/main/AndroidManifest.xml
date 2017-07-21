@@ -40,9 +40,12 @@
         <activity android:name=".AndriodGridLayoutActivity2" />
         android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ContactsToListView" />
-        <activity android:name=".RatingBar" />
         <activity android:name=".Andriod_RatingBar" />
-        <activity android:name=".DatePickerActivity"></activity>
+        <activity android:name=".DatePickerActivity" />
+        <activity android:name=".JsonParsing" />
+        <activity android:name=".JsonParsingListItem" />
+
+        <activity android:name=".SqlDbActivity"></activity>
     </application>
 
 </manifest>

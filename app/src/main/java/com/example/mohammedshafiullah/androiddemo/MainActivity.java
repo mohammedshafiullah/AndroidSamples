@@ -101,7 +101,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(datePicker_intents);
                 break;
 
-        }
+            case R.id.JSONparsing:
+                Intent JSONparsing_intents = new Intent(this, JsonParsing.class);
+                startActivity(JSONparsing_intents);
+                break;
 
+            case R.id.SqliteDatabase:
+                Intent SqliteDatabase_intents = new Intent(this, SqlDbActivity.class);
+                startActivity(SqliteDatabase_intents);
+                break;
+
+        }
     }
 }
