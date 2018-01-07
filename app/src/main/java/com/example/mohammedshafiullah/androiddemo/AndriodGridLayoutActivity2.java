@@ -13,6 +13,7 @@ public class AndriodGridLayoutActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_andriod_grid_layout2);
 
 
