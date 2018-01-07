@@ -22,7 +22,7 @@
         </activity>
         <activity
             android:name=".RegistrationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
         <activity
             android:name=".DeletelistView"
             android:screenOrientation="portrait" />
@@ -34,7 +34,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".LaunchScreenLogin_Activity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".LaunchScreenLogoutActivity"
             android:screenOrientation="portrait" />
@@ -52,7 +52,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".ImageFromURL"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
         <activity
             android:name=".Navigation_Drawer_fragmet_Activity"
             android:label="@string/title_activity_navigation__drawer_fragmet_"
@@ -86,7 +86,7 @@
 
         <activity
             android:name=".SqlDbActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>
