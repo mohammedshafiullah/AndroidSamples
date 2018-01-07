@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidDemo.iml" filepath="$PROJECT_DIR$/AndroidDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/AndroidSamples.iml" filepath="$PROJECT_DIR$/AndroidSamples.iml" />
+      <module fileurl="file://G:\Android\Workspace\Research\AndroidSamples\AndroidDemo.iml" filepath="G:\Android\Workspace\Research\AndroidSamples\AndroidDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AndroidSamples.iml" filepath="$PROJECT_DIR$/.idea/AndroidSamples.iml" />
+      <module fileurl="file://G:\Android\Workspace\Research\AndroidSamples\AndroidSamples.iml" filepath="G:\Android\Workspace\Research\AndroidSamples\AndroidSamples.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://G:\Android\Workspace\Research\AndroidSamples\app\app.iml" filepath="G:\Android\Workspace\Research\AndroidSamples\app\app.iml" />
     </modules>
   </component>
 </project>

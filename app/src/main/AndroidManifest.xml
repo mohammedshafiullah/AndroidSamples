@@ -20,32 +20,73 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegistrationActivity" />
-        <activity android:name=".DeletelistView" />
-        <activity android:name=".Shared_Preference_Activity" />
-        <activity android:name=".Launch_Screen_Activity" />
-        <activity android:name=".LaunchScreenLogin_Activity" />
-        <activity android:name=".LaunchScreenLogoutActivity" />
-        <activity android:name=".Dialogs_Activity" />
-        <activity android:name=".MultipleListViews" />
-        <activity android:name=".FragmentsActivity" />
-        <activity android:name=".ViewPagerActivity" />
-        <activity android:name=".ImageFromURL" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DeletelistView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shared_Preference_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Launch_Screen_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LaunchScreenLogin_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LaunchScreenLogoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dialogs_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MultipleListViews"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FragmentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewPagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ImageFromURL"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Navigation_Drawer_fragmet_Activity"
             android:label="@string/title_activity_navigation__drawer_fragmet_"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".PhoneContacts" />
-        <activity android:name=".AndroidGridLayoutActivity" />
-        <activity android:name=".AndriodGridLayoutActivity2" />
-        android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ContactsToListView" />
-        <activity android:name=".Andriod_RatingBar" />
-        <activity android:name=".DatePickerActivity" />
-        <activity android:name=".JsonParsing" />
-        <activity android:name=".JsonParsingListItem" />
+        <activity
+            android:name=".PhoneContacts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AndroidGridLayoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AndriodGridLayoutActivity2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ContactsToListView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Andriod_RatingBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DatePickerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".JsonParsing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".JsonParsingListItem"
+            android:screenOrientation="portrait" />
 
-        <activity android:name=".SqlDbActivity"></activity>
+        <activity
+            android:name=".SqlDbActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
