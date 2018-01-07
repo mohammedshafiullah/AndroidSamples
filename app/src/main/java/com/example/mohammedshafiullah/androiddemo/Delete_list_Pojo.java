@@ -11,7 +11,7 @@ public class Delete_list_Pojo
 
     public Delete_list_Pojo (String nameString , String placeString)
     {
-        
+
         this.nameString = nameString;
         this.placeString = placeString;
     }
