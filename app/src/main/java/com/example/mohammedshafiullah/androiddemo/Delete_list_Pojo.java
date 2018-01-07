@@ -6,9 +6,11 @@ package com.example.mohammedshafiullah.androiddemo;
 
 public class Delete_list_Pojo
 {
-    
+
     public String nameString ;
     public String placeString;
+
+    
 
     public Delete_list_Pojo (String nameString , String placeString)
     {
